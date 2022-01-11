@@ -1,0 +1,648 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+}
+
+hr {
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* FOOTER */
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1.3rem 1.3rem;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: whitesmoke;
+  position: relative;
+  left: 545px;
+  font-size: 1.7rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-decoration-thickness: 3px;
+  letter-spacing: 0.7px;
+  text-underline-offset: 5px;
+  color: whitesmoke;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 1.3rem 1.3rem;
+  gap: 20px;
+  /* box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3); */
+  background-color: whitesmoke;
+}
+
+header .logo a {
+  font-size: 1.7rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-decoration-thickness: 3px;
+  letter-spacing: 0.7px;
+  text-underline-offset: 5px;
+}
+
+/* header .logo {
+  text-align: center;
+  margin-bottom: 0.5rem;
+} */
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 200px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 1;
+  }
+}
+
+header nav ul {
+  gap: 5px;
+}
+
+@media (min-width: 200px) {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+p {
+  text-align: justify;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+  gap: 140px 20px;
+}
+
+main section {
+  grid-column: 2/3;
+}
+
+/* HOME */
+
+.homenav {
+  position: relative;
+  left: 427px;
+}
+
+@media screen and (max-width: 1200px) {
+  .homenav {
+    display: none;
+  }
+}
+
+#home h1 {
+  margin: 20px;
+  padding: 20px;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(billeder/home2.svg);
+  background-size: cover;
+  background-position: 10% 25%;
+  grid-column: 1/4;
+}
+
+@media (orientation: portrait) and (min-width: 500px) {
+  #home {
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 200px) {
+  #home {
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+/* ABOUT */
+
+#about h1 {
+  margin: 20px;
+  padding: 20px;
+}
+
+#about h3 {
+  font-family: "aktiv grotesk-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  position: relative;
+  left: 25px;
+  top: 20px;
+}
+
+#about p {
+  position: relative;
+  left: 55px;
+  top: 100px;
+  width: 530px;
+  /* text-align: justify; */
+}
+
+@media (orientation: portrait) and (min-width: 200px) {
+  #about p {
+    font-size: 10px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+    width: 185px;
+    /* text-align: justify; */
+  }
+}
+
+#about h4 {
+  font-family: "aktiv-grotesk-bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  left: 55px;
+  top: 140px;
+}
+
+#about li {
+  font-family: "aktiv-grotesk", sans-serif;
+  margin-top: 10px;
+  font-style: italic;
+  position: relative;
+  left: 55px;
+  top: 140px;
+  display: flex;
+}
+
+@media (orientation: portrait) and (min-width: 200px) {
+  #about h4 {
+    font-family: "aktiv-grotesk-bold", sans-serif;
+    font-weight: 700;
+    font-size: 8px;
+    position: relative;
+    left: 20px;
+    top: 55px;
+  }
+
+  #about li {
+    font-family: "aktiv-grotesk", sans-serif;
+    margin-top: 2px;
+    font-style: italic;
+    position: relative;
+    left: 20px;
+    top: 57px;
+    display: flex;
+    font-size: 5px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 200px) {
+  #about h3 {
+    font-family: "aktiv grotesk-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+    position: relative;
+    left: 25px;
+  }
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background-image: url(billeder/about.svg);
+  background-size: cover;
+  background-position: 10% 25%;
+  grid-column: 1/4;
+}
+
+@media (orientation: portrait) and (min-width: 200px) {
+  #about {
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+/* TEMA 2 */
+
+@media (min-width: 600px) {
+  #tema2 .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  #tema2 img {
+    width: 600px;
+    height: 370px;
+    object-fit: cover;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 600px) {
+  #tema2 h3 {
+    margin: 0 -160px;
+    color: black;
+  }
+
+  #tema2 p {
+    margin: 0 0 20px -160px;
+  }
+
+  #tema2 h4 {
+    margin: 7px -160px 0;
+    color: black;
+  }
+}
+
+/* TEMA 3 */
+
+@media (min-width: 600px) {
+  #tema3 .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  #tema3 img {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #tema3 h3 {
+    margin: 0 -160px;
+    color: black;
+  }
+
+  #tema3 p {
+    margin: 0 0 20px -160px;
+  }
+
+  #tema3 h4 {
+    margin: 7px -160px 0;
+    color: black;
+  }
+}
+
+/* TEMA 4 */
+
+@media (min-width: 600px) {
+  #tema4 .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  #tema4 img {
+    width: 600px;
+    height: 370px;
+    object-fit: cover;
+    margin-top: 0px;
+  }
+
+  #tema4 h3 {
+    margin: 0 -160px;
+    color: black;
+  }
+
+  #tema4 p {
+    margin: 0 0 20px -160px;
+  }
+
+  #tema4 h4 {
+    margin: 7px -160px 0;
+    color: black;
+  }
+}
+
+/* TEMA 5 */
+
+@media (min-width: 600px) {
+  #tema5 .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  #tema5 img {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #tema5 h3 {
+    margin: 0 -160px;
+    color: black;
+  }
+
+  #tema5 p {
+    margin: 0 0 20px -160px;
+  }
+
+  #tema5 h4 {
+    margin: 7px -160px 0;
+    color: black;
+  }
+}
+
+@media (min-width: 200px) {
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+p {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.4;
+  color: black;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  padding: 8px;
+}
+
+a:hover {
+  color: blue;
+  /* background: #e7bd00; */
+  /* margin-top: 20px; */
+}
+
+/* OVERSKRIFTER */
+
+h1 {
+  font-family: ccbiffbamboom, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  color: black;
+  line-height: 1.125;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 39px;
+  margin-bottom: 10px;
+  color: black;
+  margin-bottom: 4px;
+  /* margin-top: 50px; */
+}
+
+h3 {
+  font-family: "aktiv grotesk-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 31px;
+  /* margin-bottom: 10px; */
+  /* margin-top: 20px; */
+}
+
+h4 {
+  font-family: "aktiv-grotesk-thin", sans-serif;
+  font-weight: 200;
+  font-size: 27px;
+  font-style: normal;
+  font-style: normal;
+  color: black;
+  line-height: 1.125;
+  /* margin-top: 50px; */
+}
+
+/* KNAPPER */
+
+.knap {
+  /* background-color: whitesmoke; Green */
+  border: none;
+  color: white;
+  /* padding: 16px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.knap_1 {
+  /* font-family: "aktiv-grotesk-thin", sans-serif;
+  font-weight: 400; */
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  left: 189px;
+  top: 68px;
+}
+
+.knap_1:hover {
+  background-color: black;
+  color: white;
+}
+
+.knap_2 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  left: 294px;
+  top: 3px;
+}
+
+.knap_2:hover {
+  background-color: black;
+  color: white;
+}
+
+.knap_3 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  left: 274px;
+  top: 46px;
+}
+
+.knap_3:hover {
+  background-color: black;
+  color: white;
+}
+
+.knap_4 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  left: 75px;
+  top: 46px;
+}
+
+.knap_4:hover {
+  background-color: black;
+  color: white;
+}
+
+.knap_5:hover {
+  background-color: black;
+  color: white;
+}
+
+.knap_5 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+
+.knap_5:hover {
+  background-color: black;
+  color: white;
+}
+
+/* NAV DROP DOWN */
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(163, 151, 151);
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: black;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: "Roboto", sans-serif; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+/* a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+  color: blue;
+} */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

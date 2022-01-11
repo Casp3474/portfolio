@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#dokumentation img {
+  display: block;
+  margin-left: 500px;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 30px;
+}
+
+header {
+  position: static;
+  top: 0;
+  padding: 1.3rem 1.3rem;
+  gap: 20px;
+  /* box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3); */
+  background-color: whitesmoke;
+}
+
+header .logo a {
+  font-size: 1.7rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-decoration-thickness: 3px;
+  letter-spacing: 0.7px;
+  text-underline-offset: 5px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 1;
+  }
+}
+
+header nav ul {
+  gap: 5px;
+}
+
+h1 {
+  font-family: "aktiv grotesk", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  color: black;
+  line-height: 1.125;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "aktiv grotesk", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 31px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+h4 {
+  font-family: "aktiv-grotesk-thin", sans-serif;
+  font-weight: 200;
+  font-size: 27px;
+  font-style: normal;
+  font-style: normal;
+  color: black;
+  line-height: 1.125;
+  /* margin-top: 50px; */
+  margin-left: 40px;
+}
